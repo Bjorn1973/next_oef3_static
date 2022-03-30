@@ -1,3 +1,5 @@
+@import url("https://unpkg.com/mvp.css");
+
 html,
 body {
   padding: 0;
@@ -10,7 +12,31 @@ a {
   color: inherit;
   text-decoration: none;
 }
-
+a:hover {
+  color: #23de49;
+}
 * {
   box-sizing: border-box;
+}
+
+section aside {
+  text-align: center;
+}
+section aside:hover {
+  box-shadow: 5px 5px 10px #23de49;
+}
+h1 {
+  text-transform: capitalize;
+  font-size: 2.5rem;
+  color: #23de49;
+  position: relative;
+}
+section h1::after {
+  content: "";
+  width: 245px;
+  height: 1px;
+  background-color: #23de49;
+  position: absolute;
+  top: 100px;
+  left: 0;
 }
