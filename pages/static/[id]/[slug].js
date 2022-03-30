@@ -43,7 +43,7 @@ const pokemonDetail = ({
             </p>
             <p>
               Abilities: <span>{abilities[0].ability.name}</span> |{" "}
-              <span>{abilities[1].ability.name}</span>
+              {!abilities[1] ? "" : <span>{abilities[1].ability.name}</span>}
             </p>
             <p>
               Base-experience: <span>{base_experience}</span>
