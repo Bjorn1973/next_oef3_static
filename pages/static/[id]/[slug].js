@@ -19,10 +19,10 @@ const pokemonDetail = ({
   },
 }) => {
   return (
-    <main>
+    <main className="detail">
       <h1>Detail of {name}</h1>
       <section>
-        <aside>
+        <aside className="pokemonDetail">
           <h1>{name}</h1>
           <div className="imageWrapper">
             <Image
